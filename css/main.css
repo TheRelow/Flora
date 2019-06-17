@@ -1,5 +1,5 @@
 @charset "UTF-8";
-header, .top-bar, .logo, .callback, .callback .contact, .top-content .items, .director-bottom, .director-bottom .print, .content .items, .content .items .item .name, .ex .container, .ex .container .left .li, .footer-content, .flex {
+header, .top-bar, .logo, .callback, .callback .contact, .top-content .items, .director-bottom, .director-bottom .print, .content .items, .content .items .item .name, .ex .container, .ex .container .left .li, .form-items, .footer-content, .flex {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -337,9 +337,60 @@ header {
     box-sizing: border-box;
     width: 100%;
     height: 240px;
+    padding: 32px 0 0 55px;
     border: 15px solid #f5f5f5;
     background: white;
     box-shadow: 0 10px 20px rgba(30, 31, 35, 0.15); }
+    .ex2 .form h3 {
+      font-family: "ExtraBold";
+      font-size: 36px;
+      font-weight: 400;
+      line-height: 36px;
+      color: #212121; }
+      .ex2 .form h3 span.orange {
+        font-family: "ExtraBold";
+        font-size: 36px;
+        font-weight: 400;
+        color: #ffb125; }
+    .ex2 .form p {
+      height: 20px;
+      color: #212121;
+      font-family: "Regular";
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 36px; }
+
+.form-items {
+  margin-top: 22px;
+  align-items: center; }
+  .form-items input {
+    box-sizing: border-box;
+    width: 400px;
+    height: 66px;
+    padding: 0 0 0 32px;
+    font-size: 24px;
+    color: #bfbfbf;
+    border-radius: 33px;
+    margin-right: 20px;
+    border: 1px solid #dcdcdc;
+    background-color: #f5f5f5; }
+  .form-items button {
+    width: 300px;
+    height: 66px;
+    box-shadow: 0 10px 40px rgba(139, 196, 32, 0.5), inset 0 -6px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    margin-right: 29px;
+    border-radius: 33px;
+    border: none;
+    background-color: #8bc420;
+    background-image: linear-gradient(to right, #8bc420 0%, #75a915 100%); }
+  .form-items p {
+    color: #212121 !important;
+    font-family: "Regular";
+    font-size: 14px !important;
+    line-height: 18px !important; }
+    .form-items p span {
+      text-decoration: underline; }
 
 .partners {
   padding-top: 89px; }
