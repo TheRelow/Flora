@@ -58,6 +58,20 @@ button
 	width: 100%
 	height: 850px
 
+@media (max-width: 1140px)
+	.background
+		height: 900px
+
+	.top
+		height: 900px
+
+@media (max-width: 950px)
+	.background
+		height: 980px
+
+	.top
+		height: 980px
+
 header
 	@extend %flex
 	justify-content: center
@@ -71,6 +85,18 @@ header
 	justify-content: space-between
 	width: 1140px
 	height: 62px
+
+@media (max-width: 950px)
+	header
+		width: 100%
+		padding: 40px 0
+
+	.top-bar
+		width: 90%
+		margin: 0 auto
+		height: auto
+		flex-direction: column
+		align-items: center
 
 .logo
 	@extend %flex
@@ -118,7 +144,6 @@ header
 
 .top-content
 	width: 1080px
-	min-height: 200px
 	padding: 62px 0 0 0
 	text-align: center
 	margin: 0 auto
@@ -167,6 +192,16 @@ header
 				line-height: 24px
 				color: white
 				text-align: center
+
+@media (max-width: 1140px)
+	.top-content
+		width: 95%
+		margin: 0 auto
+
+		.items
+			.item
+				width: auto //950
+
 
 .tick
 	width: 70px
@@ -238,7 +273,7 @@ header
 
 @media (max-width: 1200px)
 	.director-bottom
-		width: 85%
+		width: 95%
 
 @media (max-width: 1820px)
 	.director
@@ -310,6 +345,33 @@ header
 @media (max-width: 1320px)
 	.director-info
 		padding: 92px 0 0 425px
+
+@media (max-width: 990px)
+	.director
+		background-position: -500px
+
+	.director-info
+		padding: 92px 0 0 300px
+
+@media (max-width: 870px)
+	.director-info
+		padding: 92px 0 0 240px
+
+@media (max-width: 800px)
+	.director-bottom
+		flex-direction: column
+		align-items: center
+		width: 95%
+
+		button
+			margin: 30px 0
+
+	.director-info 
+		padding-top: 0
+		.card
+			height: auto
+			width: 100%
+			background: white
 
 
 .map
@@ -411,9 +473,67 @@ header
 
 @media (max-width: 1200px)
 	.content
+		width: 95%
+
+@media (max-width: 1190px)
+	.content
+		width: 75%
+
+@media (max-width: 1132px)
+	.content
+		width: 80%
+
+@media (max-width: 1062px)
+	.content
 		width: 85%
 
+@media (max-width: 1010px)
+	.content
+		width: 90%
+
+@media (max-width: 936px)
+	.content
+		width: 95%
+
+@media (max-width: 892px)
+	.content
+		width: 65%
+
+@media (max-width: 858px)
+	.content
+		width: 70%
+
+@media (max-width: 800px)
+	.content
+		width: 75%
+
+@media (max-width: 746px)
+	.content
+		width: 80%
+
+@media (max-width: 700px)
+	.content
+		width: 85%
+
+@media (max-width: 650px)
+	.content
+		width: 90%
+
+@media (max-width: 600px)
+	.content
+		width: 95%
+
+@media (max-width: 588px)
+	.content
+		width: 80%
+
+		.items
+			justify-content: center
+
 .ex
+	width: 1140px
+	padding: 70px 0
+	margin: 0 auto
 	padding-top: 24px
 	padding-bottom: 0
 
@@ -425,7 +545,6 @@ header
 
 		.left
 			padding-top: 46px
-			padding-right: 82px
 			flex-grow: 1
 
 			h2
@@ -469,7 +588,35 @@ header
 
 		.right
 			height: 592px
-			padding-left: 82px
+
+@media (max-width: 1200px)
+	.ex
+		width: 95%
+
+		.left
+			width: 572px //526
+
+		.right
+			width: 486px
+
+@media (max-width: 990px)
+	.ex
+		.left
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			align-items: center
+
+		.right
+			display: none !important
+
+@media (max-width: 520px)
+	.ex
+		.left
+			display: block
 
 .ex2
 	position: relative
