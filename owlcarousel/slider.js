@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $('#partners').owlCarousel({
-  	items: 4,
+    responsive: {
+      0:{items: 1}, 600:{items: 2}, 900:{items: 3}, 1440:{items: 4} },
   	margin: 20,
   	loop: true,
   	nav: true,

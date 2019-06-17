@@ -53,6 +53,12 @@
 
 .owl-stage-outer { width: 1140px; padding: 10px 16px 30px; left: -16px;}
 .owl-carousel { width: 1140px; margin: 0 auto 54px; }
+@media (max-width: 1200px) {
+  .owl-carousel { width: 1000px; margin: 0 auto 54px; }
+}
+@media (max-width: 600px) {
+  .owl-carousel { width: 500px; margin: 0 auto 54px; }
+}
 .owl-item {
 display: -webkit-flex;
 display: -moz-flex;

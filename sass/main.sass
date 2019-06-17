@@ -10,9 +10,12 @@
 	padding: 0
 	font-family: "Regular"
 	font-weight: 400
+	-ms-transition: all 1s ease 0s
+	-o-transition: all 1s ease 0s
+	-moz-transition: all 1s ease 0s
+	-webkit-transition: all 1s ease 0s
 
 html
-	min-width: 1140px
 
 body
 	position: relative
@@ -194,6 +197,7 @@ header
 		width: 555px
 		height: 486px
 		padding: 34px 45px 30px
+		margin-right: 0
 		background: url(../img/shape_1.png)
 		background-size: cover
 
@@ -232,9 +236,81 @@ header
 			p
 				font: 18px "regular"
 
-@media (max-width: 1440px)
+@media (max-width: 1200px)
+	.director-bottom
+		width: 85%
+
+@media (max-width: 1820px)
 	.director
-	background-position: -150px
+		background-position: -50px
+
+	.director-info
+		padding: 92px 0 0 925px
+
+@media (max-width: 1770px)
+	.director
+		background-position: -100px
+
+	.director-info
+		padding: 92px 0 0 875px
+
+@media (max-width: 1720px)
+	.director
+		background-position: -150px
+
+	.director-info
+		padding: 92px 0 0 825px
+
+@media (max-width: 1670px)
+	.director
+		background-position: -200px
+
+	.director-info
+		padding: 92px 0 0 775px
+
+@media (max-width: 1620px)
+	.director
+		background-position: -250px
+
+	.director-info
+		padding: 92px 0 0 725px
+
+@media (max-width: 1570px)
+	.director
+		background-position: -300px
+
+	.director-info
+		padding: 92px 0 0 675px
+
+@media (max-width: 1520px)
+	.director
+		background-position: -350px
+
+	.director-info
+		padding: 92px 0 0 625px
+
+@media (max-width: 1470px)
+	.director
+		background-position: -400px
+
+	.director-info
+		padding: 92px 0 0 575px
+
+@media (max-width: 1420px)
+	.director
+		background-position: -450px
+
+	.director-info
+		padding: 92px 0 0 525px
+
+@media (max-width: 1370px)
+	.director-info
+		padding: 92px 0 0 475px
+
+@media (max-width: 1320px)
+	.director-info
+		padding: 92px 0 0 425px
+
 
 .map
 	box-sizing: border-box
@@ -332,6 +408,10 @@ header
 					font-size: 22px
 					font-weight: 400
 					line-height: 26px
+
+@media (max-width: 1200px)
+	.content
+		width: 85%
 
 .ex
 	padding-top: 24px
